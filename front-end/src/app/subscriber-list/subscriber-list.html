@@ -1,0 +1,25 @@
+<h2>Subscriber List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Phone Number</th>
+            <th>User Number</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let subscriber of subscribers">
+            <td> {{subscriber.phoneNumber}} </td>
+            <td> {{subscriber.userName}} </td>
+            <td> {{subscriber.status}} </td>
+            <td>
+                <button (click) = "updateSubscriber(subscriber.phoneNumber)" class="btn btn-info">Update</button>
+                <button (click) = "subscriberDetails(subscriber.phoneNumber)" class="btn btn-info" style="margin-left: 10px">Details</button>
+                <button (click) = "deleteSubscriber(subscriber.phoneNumber)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+
+</table>

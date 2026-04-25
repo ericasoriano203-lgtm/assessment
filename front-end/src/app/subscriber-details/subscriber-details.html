@@ -1,0 +1,24 @@
+<h3>Subscriber Details</h3>
+<div>
+    <div>
+        <label><b> Phone Number: </b></label> {{subscriber.phoneNumber}}
+    </div>
+    <div>
+        <label><b> User Name: </b></label> {{subscriber.userName}}
+    </div>
+    <div>
+        <label><b> Domain: </b></label> {{subscriber.domain}}
+    </div>
+    <div>
+        <label><b> Status: </b></label> {{subscriber.status}}
+    </div>
+    <div>
+        <label><b> Call Forwarding (No Reply) </b></label>
+    </div>
+    <div>
+        <label><b> &nbsp; Provisioned: </b></label> {{subscriber.features.callForwardNoReply.provisioned}}
+    </div>
+    <div>
+        <label><b> &nbsp; Destination: </b></label> {{subscriber.features.callForwardNoReply.destination}}
+    </div>
+</div>
